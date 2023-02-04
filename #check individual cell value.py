@@ -7,5 +7,6 @@ hw2 = '.\code\INFS247HW2.xlsx'
 wb = load_workbook(hw2)
 
 emp = wb["Employees"]
-check = emp['F8']
+cell = 'F8'
+check = emp[cell]
 print(check.value)
