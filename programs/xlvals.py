@@ -1,5 +1,7 @@
 
 #print(vals) @ the end will output values of specified cells from specified worksheet
+#each line in .txt file read as separate check
+#format .txt lines as checks as follows(left expr): sheet_name B_2:AA_3 == not None||>plain english>||Cells from range B2:AA3 are not empty.
 
 f = '.\code\Checks.txt'
 hw2 = '.\code\INFS247HW2.xlsx'
