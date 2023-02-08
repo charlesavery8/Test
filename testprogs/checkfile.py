@@ -1,9 +1,9 @@
 
-chk_file = input("File: ")
+#chk_file = input("File: ")
 #in VS>> C:/Users/avery/OneDrive/Documents/GitHub/Test/testing.txt
 
 checklist = ''
-#chk_file = '.\code\Checks.txt'
+chk_file = '.\code\Checks.txt'
 
 with open(chk_file) as f:
     for line in f:

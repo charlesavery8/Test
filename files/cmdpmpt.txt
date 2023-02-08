@@ -1,0 +1,19 @@
+#known to work in cmdpmpt for openpyxl project
+
+
+>>>import openpyxl
+>>>from openpyxl import load_workbook
+>>>hw2 = '.\code\INFS247HW2.xlsx'
+>>>wb = load_workbook(hw2)
+>>>sheet = 'Employees'
+>>>ws = wb[sheet]
+
+>>>list_ck = [[3, 2, 2, 13], [12, 8, 8, 12], [9, 2, 2, 9]]
+
+>>>for list in list_ck:
+...    for row in ws.iter_cols(min_row = list[0], min_col = list[1], max_col = list[2], max_row = list[3], values_only = True):
+...            print(row)
+...
+('First Name', 'Gabby', 'Luke ', 'Sally', 'Jon', 'Dean', 'Jackson', 'Oliver', 'Mary', 'Faith', 'Charles')
+('=G12*$H$2+G12',)
+('Jackson',)
