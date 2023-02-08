@@ -1,0 +1,3 @@
+Employees B_3:B_13 not NONE
+Employees H_12 == =G12*$H$2+G12
+New_Location_Loan_Repayment B_9 == =B8*B7
