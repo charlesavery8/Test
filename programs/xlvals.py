@@ -52,9 +52,8 @@ def parsechecks(file): #outputs each line in file as [(sheetname, cellrange, arg
         cellrange = check[1]
         cellrange = cellrange.replace("_", " ")
         cellrange = formatcells(cellrange) #calls user defined function formatcells inside of user defined function; caution
-        arg = check[2]
-        chk_value = check[3]
-        ans = (sheetname, cellrange, arg, chk_value)
+        chk = check[2]
+        ans = (sheetname, cellrange, chk)
         form_ck.append(ans)
         
     return form_ck
